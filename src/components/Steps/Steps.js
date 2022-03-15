@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../Card/Card";
 import coins from "../../images/coins.jpg";
 import piles from "../../images/vertical-coins.jpg";
 import "./Steps.css";
