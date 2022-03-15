@@ -1,3 +1,9 @@
 .App {
   padding: 14.44% 4.86% 5.97%;
 }
+
+@media screen and (max-width: 1150px) {
+  .App {
+    padding: 98px 20px 63px;
+  }
+}
