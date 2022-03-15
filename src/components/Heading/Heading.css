@@ -4,7 +4,7 @@
 }
 
 .heading__title {
-  max-width: 588px;
+  width: 588px;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -22,7 +22,7 @@
   line-height: 1.17;
   color: #46464a;
   margin: 0 auto;
-  padding-bottom: 4.62%;
+  padding-bottom: 60px;
 }
 
 .heading__buttons {
@@ -68,4 +68,73 @@
 
 .heading__link:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1150px) {
+  .heading {
+    padding-bottom: 147px;
+  }
+
+  .heading__title {
+    width: 404px;
+    font-size: 44px;
+    line-height: 1.18;
+  }
+
+  .heading__text {
+    max-width: 310px;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .heading {
+    padding-bottom: 17.4%;
+  }
+
+  .heading__title {
+    width: 350px;
+    font-size: 38px;
+    line-height: 1.19;
+  }
+
+  .heading__text {
+    max-width: 280px;
+    font-size: 18px;
+    line-height: 1.19;
+    padding-bottom: 6.5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    padding-bottom: 21.28%;
+  }
+
+  .heading__title {
+    width: 294px;
+    font-size: 32px;
+  }
+
+  .heading__text {
+    max-width: 248px;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .heading__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading__popup-button {
+    width: 100%;
+  }
+
+  .heading__link {
+    width: 100%;
+  }
 }
