@@ -1,4 +1,5 @@
 .promo {
+  display: flex;
   background: #1b6dff;
   border-radius: 4px;
   position: relative;
@@ -13,7 +14,7 @@
 .promo__logo-block {
   display: flex;
   align-items: center;
-  padding: 12px 12px 12px 0px;
+  padding: 12px 12px 12px 0;
   margin-bottom: 60px;
 }
 
@@ -65,9 +66,10 @@
   height: 501px;
   background-image: url("../../images/beniamin-photo.png");
   background-size: contain;
+  background-position: right bottom;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   right: 9.85%;
 }
 
@@ -76,7 +78,7 @@
   box-sizing: border-box;
   background: #ffffff;
   border-radius: 4px;
-  text-align: center;
+  text-align: right;
   position: absolute;
   bottom: 60px;
   right: -69.5px;
@@ -117,14 +119,79 @@
   }
 
   .promo__photo-block {
-    width: 434px;
-    height: 448px;
+    width: 47.17%;
+    height: 113.7%;
     right: 18px;
   }
 
   .promo__ceo-block {
-    bottom: 62px;
+    bottom: 13.84%;
     right: 9px;
-    padding: 16px 23px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .promo__logo-block {
+    margin-bottom: 15.15%;
+  }
+
+  .promo__text {
+    font-size: 20px;
+    padding-bottom: 30.3%
+  }
+
+  .promo__link {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  .promo__ceo-block {
+    bottom: 8%;
+  }
+
+  .promo__name {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .promo {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 12px 0 12px;
+  }
+
+  .promo__text-block {
+    width: 100%;
+    max-width: 485px;
+  }
+
+  .promo__logo-block {
+    margin-bottom: 24px;
+    padding: 12px 0;
+  }
+
+  .promo__text {
+    padding-bottom: 32px;
+    padding-right: 12px;
+  }
+
+  .promo__link {
+    padding-bottom: 28px;
+  }
+
+  .promo__photo-block {
+    width: 296px;
+    min-height: 304px;
+    background-position: center;
+    position: relative;
+    right: 0;
+  }
+
+  .promo__ceo-block {
+    width: 281px;
+    bottom: 10px;
+    right: 8px;
+    padding: 16px 21px;
   }
 }
