@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../images/boom-telecom-icon.svg";
 import arrow from "../../images/arrow-icon.svg";
-import photo from "../../images/beniamin-photo.jpg";
 import "./Promo.css";
 
 function Promo() {
@@ -22,7 +21,6 @@ function Promo() {
       </div>
 
       <div className="promo__photo-block">
-        <img className="promo__photo" src={photo} alt="CEO of BoomTelecom" />
         <div className="promo__ceo-block">
           <p className="promo__name">Smith Rostovskiy</p>
           <p className="promo__career">CEO & Founder of BoomTelecom</p>
