@@ -6,6 +6,7 @@
 }
 
 .promo__text-block {
+  width: 40.76%;
   max-width: 494px;
 }
 
@@ -71,8 +72,7 @@
 }
 
 .promo__ceo-block {
-  width: 100%;
-  max-width: 293px;
+  width: 293px;
   box-sizing: border-box;
   background: #ffffff;
   border-radius: 4px;
@@ -100,4 +100,31 @@
   line-height: 1.1;
   color: #1B6DFF;
   margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .promo {
+    padding: 1.85% 0 4.46% 2.61%;
+  }
+
+  .promo__text-block {
+    width: 47.77%;
+    max-width: 396px;
+  }
+
+  .promo__text {
+    font-size: 32px;
+  }
+
+  .promo__photo-block {
+    width: 434px;
+    height: 448px;
+    right: 18px;
+  }
+
+  .promo__ceo-block {
+    bottom: 62px;
+    right: 9px;
+    padding: 16px 23px;
+  }
 }
