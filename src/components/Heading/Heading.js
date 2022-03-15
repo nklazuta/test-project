@@ -10,7 +10,7 @@ function Heading() {
       </p>
       <div className="heading__buttons">
         <button className="heading__popup-button" type="button">
-          Sign Up
+          Open popup
         </button>
         <a className="heading__link" href="#">
           some link
