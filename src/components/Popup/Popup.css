@@ -1,0 +1,138 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.popup__container {
+  width: calc(100% - 12px);
+  max-width: 320px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 20px 16px;
+}
+
+.popup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #121212;
+  padding-bottom: 28px;
+  margin: 0;
+}
+
+.popup__label {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgba(18, 18, 18, 0.8);
+  padding-bottom: 28px;
+}
+
+.popup__error {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgba(255, 68, 68, 0.8);
+  padding-top: 8px;
+}
+
+.popup__input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #121212;
+  border: none;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 12px 8px;
+  margin-top: 8px;
+}
+
+.popup__input_type_error {
+  color: #ffffff;
+  background: rgba(255, 68, 68, 0.8);
+}
+
+.popup__input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: rgba(18, 18, 18, 0.44);
+}
+
+.popup__submit-button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #e5e1e6;
+  background: #1b6dff;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.popup__submit-button_disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.popup__submit-button:hover {
+  opacity: 0.8;
+}
+
+.popup__close-button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  background-image: url("../../images/close-icon.svg");
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.popup__close-button:hover {
+  opacity: 0.8;
+}
