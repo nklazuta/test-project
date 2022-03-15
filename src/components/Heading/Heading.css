@@ -42,6 +42,12 @@
   border-radius: 4px;
   border: none;
   padding: 12px 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.heading__popup-button:hover {
+  opacity: 0.8;
 }
 
 .heading__link {
@@ -56,4 +62,10 @@
   border-radius: 4px;
   border: 2px solid #1b6dff;
   padding: 12px 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.heading__link:hover {
+  opacity: 0.8;
 }
