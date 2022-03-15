@@ -34,7 +34,7 @@ function Steps() {
           <p className="steps__card-text">
             By holding tokens you become eligeble to recive monthly payments
           </p>
-          <img className="steps__card-photo" src={piles} alt="Blue coins" />
+          <img className="steps__card-photo steps__card-photo_type_piles" src={piles} alt="Blue coins" />
           <p className="steps__card-link">How to recieve payments</p>
         </li>
       </ul>
