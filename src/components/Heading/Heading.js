@@ -1,7 +1,7 @@
 import React from "react";
 import "./Heading.css";
 
-function Heading() {
+function Heading({ onClick }) {
   return (
     <section className="heading">
       <h1 className="heading__title">This is your test task good luck</h1>
@@ -9,7 +9,11 @@ function Heading() {
         BoomTelecom crypto investments made simple
       </p>
       <div className="heading__buttons">
-        <button className="heading__popup-button" type="button">
+        <button
+          className="heading__popup-button"
+          type="button"
+          onClick={onClick}
+        >
           Open popup
         </button>
         <a className="heading__link" href="#">
