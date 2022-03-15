@@ -1,6 +1,6 @@
 import React from "react";
-import coins from "../../images/coins.jpg";
-import piles from "../../images/vertical-coins.jpg";
+import coins from "../../images/coins.png";
+import piles from "../../images/vertical-coins.png";
 import "./Steps.css";
 
 function Steps() {
@@ -17,15 +17,17 @@ function Steps() {
           <img className="steps__card-photo" src={coins} alt="Blue coins" />
           <p className="steps__card-link">Create wallet</p>
         </li>
+
         <li className="steps__card">
           <p className="steps__card-number">2</p>
           <p className="steps__card-title">Get tokens</p>
-          <p className="steps__card-text">
+          <p className="steps__card-text steps__card-text_type_narrow">
             Buy tokens on and recieve them on your wallet
           </p>
           <img className="steps__card-photo" src={coins} alt="Blue coins" />
           <p className="steps__card-link">Buy tokens</p>
         </li>
+
         <li className="steps__card">
           <p className="steps__card-number">3</p>
           <p className="steps__card-title">Hold tokens</p>
