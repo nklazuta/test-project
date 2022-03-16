@@ -10,14 +10,14 @@ function App() {
 
   const handleOpenPopupButtonClick = () => {
     setIsOpen(true);
-    console.log('open')
   };
 
-  const closePopup = () => {
+  const closePopup = (evt) => {
     setIsOpen(false);
   };
 
   const handleSubmit = ({ phone }) => {
+    setIsOpen(false);
     console.log(phone);
   };
 

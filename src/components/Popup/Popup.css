@@ -92,6 +92,10 @@
   color: rgba(18, 18, 18, 0.44);
 }
 
+.popup__input_type_error::placeholder {
+  color: rgba(255, 255, 255, 0.44);
+}
+
 .popup__submit-button {
   font-style: normal;
   font-weight: 400;
