@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useFormWithValidation } from "../../hooks/useForm";
 import "./Popup.css";
 
@@ -6,18 +6,46 @@ function Popup({ isOpen, onClose, onSubmit }) {
   const { values, errors, isFormValid, isInputValid, handleChange, resetForm } =
     useFormWithValidation();
 
-  const popupClass = isOpen ? "popup popup_opened" : "popup";
-  const inputClass = !isInputValid
-    ? "popup__input popup__input_type_error"
-    : "popup__input";
-  const submitButtonClass = !isFormValid
-    ? "popup__submit-button popup__submit-button_disabled"
-    : "popup__submit-button";
+  const popupClass = `popup ${isOpen ? "popup_opened" : ""}`;
+  const inputClass = `popup__input ${
+    !isInputValid ? "popup__input_type_error" : ""
+  }`;
+  const submitButtonClass = `popup__submit-button ${
+    !isFormValid ? "popup__submit-button_disabled" : ""
+  }`;
+
+  //Закрыть попап при клике на оверлей
+  const overlay = useRef();
 
   useEffect(() => {
-    resetForm({});
+    function handleOverlayClose(evt) {
+      if (overlay.current === evt.target) onClose();
+    }
+
+    document.addEventListener("mousedown", handleOverlayClose);
+    return () => {
+      document.removeEventListener("mousedown", handleOverlayClose);
+    };
+  });
+
+  //Закрыть попап клавишей ESC
+  useEffect(() => {
+    function handleEscClose(evt) {
+      if (evt.key === "Escape") onClose();
+    }
+
+    document.addEventListener("keydown", handleEscClose);
+    return () => {
+      document.removeEventListener("keydown", handleEscClose);
+    };
+  });
+
+  //Очищать форму при каждом открытии попапа
+  useEffect(() => {
+    resetForm();
   }, [isOpen, resetForm]);
 
+  //Обработчик сабмита формы
   function handleSubmit(evt) {
     evt.preventDefault();
     onSubmit({
@@ -27,7 +55,7 @@ function Popup({ isOpen, onClose, onSubmit }) {
   }
 
   return (
-    <div className={popupClass}>
+    <div className={popupClass} ref={overlay}>
       <div className="popup__container">
         <form className="popup__form" onSubmit={handleSubmit}>
           <h2 className="popup__title">Buy sim</h2>
