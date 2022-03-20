@@ -14,7 +14,8 @@
 }
 
 .steps__cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   list-style: none;
   padding: 0;
@@ -22,7 +23,6 @@
 }
 
 .steps__card {
-  width: 32.15%;
   max-width: 418px;
   background: #f6f6fe;
   border-radius: 4px;
@@ -108,7 +108,6 @@
   }
 
   .steps__card {
-    width: 31.52%;
     padding: 20px 16px;
   }
 
@@ -153,13 +152,7 @@
   }
 
   .steps__cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .steps__card {
-    width: 100%;
-    box-sizing: border-box;
+    grid-template-columns: auto;
   }
 
   .steps__card-photo_type_piles {
