@@ -44,11 +44,11 @@
   border: none;
   padding: 12px 0;
   cursor: pointer;
-  transition: opacity 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .heading__popup-button:hover {
-  opacity: 0.8;
+  background-color: #0053DB;
 }
 
 .heading__link {
@@ -64,11 +64,11 @@
   border: 2px solid #1b6dff;
   padding: 12px 0;
   cursor: pointer;
-  transition: opacity 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .heading__link:hover {
-  opacity: 0.8;
+  background-color: #F2F0F5;;
 }
 
 @media screen and (max-width: 1150px) {
