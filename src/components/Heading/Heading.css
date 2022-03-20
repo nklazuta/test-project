@@ -1,6 +1,6 @@
 .heading {
   text-align: center;
-  padding-bottom: 5.77%;
+  padding-bottom: 75px;
 }
 
 .heading__title {
@@ -11,7 +11,6 @@
   line-height: 1.17;
   color: #00201b;
   margin: 0 auto;
-  padding-bottom: 12px;
 }
 
 .heading__text {
@@ -22,13 +21,14 @@
   line-height: 1.17;
   color: #46464a;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-top: 12px;
 }
 
 .heading__buttons {
   display: flex;
   justify-content: center;
   gap: 12px;
+  padding-top: 60px;
 }
 
 .heading__popup-button {
@@ -89,10 +89,6 @@
 }
 
 @media screen and (max-width: 885px) {
-  .heading {
-    padding-bottom: 17.4%;
-  }
-
   .heading__title {
     width: 350px;
     font-size: 38px;
@@ -103,13 +99,12 @@
     max-width: 280px;
     font-size: 18px;
     line-height: 1.19;
-    padding-bottom: 6.5%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .heading {
-    padding-bottom: 21.28%;
+    padding-bottom: 63px;
   }
 
   .heading__title {
@@ -120,7 +115,10 @@
   .heading__text {
     max-width: 248px;
     font-size: 16px;
-    padding-bottom: 40px;
+  }
+
+  .heading__buttons {
+    padding-top: 40px;
   }
 }
 

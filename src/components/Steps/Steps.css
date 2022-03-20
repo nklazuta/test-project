@@ -1,5 +1,5 @@
 .steps {
-  padding-bottom: 6.08%;
+  padding-bottom: 79px;
 }
 
 .steps__title {
@@ -43,7 +43,6 @@
   color: #00174c;
   flex-shrink: 0;
   margin: 0;
-  padding-bottom: 48px;
 }
 
 .steps__card-title {
@@ -53,7 +52,7 @@
   line-height: 1.1;
   color: #00174c;
   margin: 0;
-  padding-bottom: 8px;
+  padding-top: 48px;
 }
 
 .steps__card-text {
@@ -64,7 +63,7 @@
   line-height: 1.2;
   color: #00174c;
   margin: 0;
-  padding-bottom: 55px;
+  padding-top: 8px;
 }
 
 .steps__card-text_type_narrow {
@@ -74,12 +73,12 @@
 .steps__card-photo {
   width: 100%;
   max-width: 255px;
-  padding-bottom: 92px;
+  padding: 55px 0 92px;
 }
 
 .steps__card-photo_type_piles {
   max-width: 195px;
-  padding: 0 0 82px 30px;
+  padding: 41px 0 82px 30px;
 }
 
 .steps__card-link {
@@ -99,7 +98,7 @@
 
 @media screen and (max-width: 1150px) {
   .steps {
-    padding-bottom: 16.74%;
+    padding-bottom: 154px;
   }
 
   .steps__title {
@@ -128,11 +127,11 @@
 
   .steps__card-number {
     font-size: 16px;
-    padding-bottom: 32px;
   }
 
   .steps__card-title {
     font-size: 20px;
+    padding-top: 32px;
   }
 
   .steps__card-text {
@@ -156,7 +155,7 @@
   }
 
   .steps__card-photo_type_piles {
-    padding: 0 0 67px 30px;
+    padding: 41px 0 67px 30px;
   }
 }
 
