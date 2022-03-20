@@ -23,8 +23,11 @@ function Steps() {
   };
 
   //отслеживать изменение ширины экрана
-  window.addEventListener("resize", function () {
-    checkWindowWidth();
+  useEffect(() => {
+    window.addEventListener("resize", checkWindowWidth);
+    return () => {
+      window.addEventListener("resize", checkWindowWidth);
+    };
   });
 
   return (
